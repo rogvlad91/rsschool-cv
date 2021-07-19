@@ -1,5 +1,5 @@
 # Vladislav Rogov
-**Mobile:**+79140204737 **E-mail:**rogvlad91@gmail.com
+**Mobile:**+79140204737 **E-mail:** rogvlad91@gmail.com
 ## Profile
 A motivated, adaptable and responsible Mobile Systems graduate pursuing a position in IT. I have over half a year experience in engineering. My current job requires solving different programming problems with Matlab.
 ## Skills
