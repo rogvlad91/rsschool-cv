@@ -1,5 +1,5 @@
 # Vladislav Rogov
-**Mobile:**+79140204737 **E-mail:** rogvlad91@gmail.com
+**Mobile:**+79817810184 **E-mail:** rogvlad91@gmail.com
 ## Profile
 A motivated, adaptable and responsible Mobile Systems graduate pursuing a position in IT. I have over half a year experience in engineering. My current job requires solving different programming problems with Matlab.
 ## Skills
@@ -35,9 +35,12 @@ R = A;
 end
 ```
 ## Experience 
-* 2021-present moment Engineer on NII Vector. Developing various scripts and algorithms for radio engineering needs in Matlab
+* 2021-present moment Engineer on NII Vector.
+ 
+ Developing various scripts and algorithms for radio engineering needs in Matlab
 ## Education 
 Bachelor Mobile Communication Systems 
+
 Saint-Petesburg Electrotechnical University 
 2017-2021
 ## Languages 
