@@ -1,0 +1,109 @@
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ccccff;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+header {
+    background-color: #0000cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.1em;
+}
+b {
+    font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-column {
+    flex:20%;
+    background-color: #fff5ef;
+    padding: 20px;
+}
+.right-column {
+    flex:80%;
+    background-color: #fff5ef;
+    padding: 20px;
+}
+@media screen and (max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+.profile-image {
+    background-image: url("myPhoto.jpg");
+    height: 450px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 0.5em;
+}
+.profile-text {
+    text-align: left;
+    margin-left: 0.3em;
+    margin-top: -0.3em;
+    color:black
+}
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    padding-bottom: 2em;
+}
+.info-panel, .exper-panel, .edu-panel, .profile, .code{
+    font-size: 16px;
+    color: #666666;
+    padding: 0.5em 1.5em;
+}
+.skills-bar, .language-bar {
+    width: 100%;
+    background-color: #e6e6ff;
+    border-radius: 1em;
+}
+.skills, .language {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+.matlab {width: 90%; background-color: #0000cc; border-radius: 1em;}
+.ad {width: 70%; background-color: #0000cc; border-radius: 1em;}
+.html {width: 60%; background-color: #0000cc; border-radius: 1em;}
+.css {width: 50%; background-color: #0000cc; border-radius: 1em;}
+.js {width: 50%; background-color: #0000cc; border-radius: 1em;}
+.cplus {width: 40%; background-color: #0000cc; border-radius: 1em;}
+.english {width: 100%; background-color: #0000cc; border-radius: 1em;}
+.german {width: 50%; background-color: #0000cc; border-radius: 1em;}
+
+mark {
+    padding: 5px;
+    background-color: #0000cc;
+    color: white;
+    border-radius: 0.2em;
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+    background-color: #0000cc;
+    color: #33ffff;
+    padding: 1em;
+}
+.links {
+    color:#ffffff
+}
+.links :hover {
+    color: #33ffff;
+}
+a {
+    color: #33ffff;
+    text-decoration: none;
+}
+li {
+    margin-bottom: 0.5em;
+}
