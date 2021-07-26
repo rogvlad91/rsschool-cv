@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>CV</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale-1.0">
+            <link rel="stylesheet" href="/style.css"/>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap">
+            <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+        </head>
+        <body>
+            <header>
+                <h2>CV</h2>
+            </header>
+                <div class="row">
+                    <div class="left-column">
+                        <div class="card">
+                            <div class="profile-image">
+                                <h2 class="profile-text">Rogov Vladislav</h2>
+                            </div>
+                            <div class="info-panel" style="font-size:16px;">
+                            <ul>
+                                <li><i class="fa fa-home fa-lg" style="color:#0000cc"></i> &nbsp; Saint-Petesburg, Russia</li>
+                                <li><i class="fa fa-envelope fa-lg" style="color:#0000cc"></i> &nbsp; rogvlad91@gmail.com</li>
+                                <li><i class="fa fa-phone fa-lg" style="color:#0000cc"></i> &nbsp; +79817810184</li>
+                            </ul>
+                            <hr>
+                            <p><b><i class="fa fa-wrench" aria-hidden="true" style="color:#0000cc"></i>&nbsp; Skills</b></p>
+                            <ul>
+                                <li>Matlab <div class="skills-bar">
+                                    <div class="skills matlab">90%</div>
+                                </li>
+                                <li>Altium Designer <div class="skills-bar">
+                                    <div class="skills ad">70%</div>
+                                </li>
+                                    <li>HTML <div class="skills-bar">
+                                        <div class="skills html">60%</div>
+                                    </li>
+                                    <li>CSS <div class="skills-bar">
+                                        <div class="skills css">50%</div>
+                                    </li>
+                                    <li>JavaScript <div class="skills-bar">
+                                        <div class="skills js">50%</div>
+                                    </li>
+                                    <li>C++ <div class="skills-bar">
+                                        <div class="skills cplus">40%</div>
+                                    </li>
+                            </ul>
+                            <p><b><i class="fa fa-globe fa-lg" style="color:#0000cc"></i> &nbsp; Languages</b></p>
+                            <ul>
+                                <li>English <div class="language-bar">
+                                    <div class="language english">100%</div>
+                                  </div>
+                                </li>
+                                <li>German <div class="language-bar">
+                                    <div class="language german">50%</div>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                
+                <div class="right-column">
+                    <div class="card">
+                        <div class="profile">
+                            <h2><i class="fa fa-user-md" aria-hidden="true" style="color:#0000cc"></i>Profile</h2>
+                            <p>A motivated, adaptable and responsible Mobile Systems graduate pursuing a position in IT. I have over half a year experience in engineering. My current job requires solving different programming problems with Matlab.</p>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="code">
+                            <h2><i class="fa fa-laptop" aria-hidden="true" style="color:#0000cc"></i>Code example</h2>
+                            <pre>
+ function [Q, R] = QR_house(A)
+ %   QR decomposition using Householder reflections
+ %   Input:  A - Hermitian matrix
+ %   Output: Q - unitary matrix
+ %           R - upper-triangle matrix
+                                 
+[r, ~] = size(A); 
+Q = eye(r);
+I = eye(r);
+ k =  1;
+for i = 1 : r - 1    
+    v = zeros(1,r);
+    v(k) = A(k,k) + (A(k,k))./abs((A(k,k))) * sum(A(:,k), k); %Householder vector
+    for j = k + 1 : r
+        v(j) = A(j,k);
+    end
+    H = I - 2 * ( conj(v' * v) / (v * v')); %Householder matrix
+    Q = Q * H;
+    A = H * A;
+    k = k + 1;
+end
+                                 
+R = A;
+end
+                            </pre>
+                        </div>
+                    </div>
+                            <div class="card">
+                                <div class="exper-panel">
+                                    <h2><i class="fa fa-suitcase fa-lg" style="color:#0000cc"></i> &nbsp; Work Experience</h2>
+                                    <div class="container">
+                                        <h5><b>Engineer / https://nii-vektor.ru</b></h5>
+                                        <h6 style="color:#0000cc"><i class="fa fa-calendar fa-lg" style="color:#0000cc"></i> &nbsp; January 2021 - <mark>Current</mark></h6>
+                                        <p> Developing various scripts and algorithms for radio engineering needs in Matlab</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="card">
+                            <div class="edu-panel">
+                                <h2><i class="fa fa-book" style="color:#0000cc"></i> &nbsp; Education</h2>
+                                <div class="container">
+                                    <h5><b>Saint-Petesburg Electrotechnical University</b></h5>
+                                    <h6 style="color:#0000cc"><i class="fa fa-calendar fa-lg" style="color:#0000cc"></i> &nbsp; 2017 - 2021</h6>
+                                    <p>Bachelor Mobile Communication Systems </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <footer>
+                    <div class="links">
+                    <p><a href="https://github.com/rogvlad91"><i class="fab fa-github fa-3x"></i></a></p>
+                    <p><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100" 
+                        height="50" alt="RS-logo"></a></p>
+                    </div>
+                    </div>
+                </footer>
+        </body>
+    </html>
